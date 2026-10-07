@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of Monika V S - Fresh Graduate Software Engineer (B.Tech Information Science) showcasing full-stack projects, skills, education, and experience.">
+  <meta name="author" content="Monika V S | Software Engineer">
+  <title>Monika V S | Software Engineer Portfolio</title>
+
+  <!-- Google Fonts: Modern Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ======================================================== -->
+  <!-- BACKGROUND OVERLAY LAYER                                 -->
+  <!-- ======================================================== -->
+  <div class="bg-layer" aria-hidden="true"></div>
+
+  <!-- ======================================================== -->
+  <!-- VERTICAL SIDEBAR NAVIGATION (LEFT SIDE)                  -->
+  <!-- ======================================================== -->
+  <aside class="vertical-navbar" id="vertical-navbar" aria-label="Main Navigation">
+    <div class="vnav-header">
+      <a href="#hero" class="vnav-brand" aria-label="Monika V S Home">
+        <span class="vnav-brand-avatar">M</span>
+      </a>
+    </div>
+
+    <!-- Main Navigation List with all requested links -->
+    <nav class="vnav-menu" aria-label="Sidebar Menu">
+      <ul class="vnav-list">
+        <li class="vnav-item">
+          <a href="#hero" class="vnav-link active" data-section="hero" aria-label="Home">
+            <i data-lucide="home" class="vnav-icon"></i>
+            <span class="vnav-tooltip">Home</span>
+          </a>
+        </li>
+        <li class="vnav-item">
+          <a href="#about" class="vnav-link" data-section="about" aria-label="About Me">
+            <i data-lucide="user" class="vnav-icon"></i>
+            <span class="vnav-tooltip">About Me</span>
+          </a>
+        </li>
+        <li class="vnav-item">
+          <a href="#skills" class="vnav-link" data-section="skills" aria-label="Skills">
+            <i data-lucide="code-2" class="vnav-icon"></i>
+            <span class="vnav-tooltip">Skills</span>
+          </a>
+        </li>
+        <li class="vnav-item">
+          <a href="#timeline" class="vnav-link" data-section="timeline" aria-label="Timeline">
+            <i data-lucide="clock" class="vnav-icon"></i>
+            <span class="vnav-tooltip">Timeline</span>
+          </a>
+        </li>
+        <li class="vnav-item">
+          <a href="#projects" class="vnav-link" data-section="projects" aria-label="Projects">
+            <i data-lucide="folder-git-2" class="vnav-icon"></i>
+            <span class="vnav-tooltip">Projects</span>
+          </a>
+        </li>
+        <li class="vnav-item">
+          <a href="#testimonials" class="vnav-link" data-section="testimonials" aria-label="Testimonials">
+            <i data-lucide="message-square-quote" class="vnav-icon"></i>
+            <span class="vnav-tooltip">Testimonials</span>
+          </a>
+        </li>
+        <li class="vnav-item">
+          <a href="#chat" class="vnav-link" data-section="chat" aria-label="Chat">
+            <i data-lucide="bot" class="vnav-icon"></i>
+            <span class="vnav-tooltip">AI Chat</span>
+          </a>
+        </li>
+        <li class="vnav-item">
+          <a href="#contact" class="vnav-link" data-section="contact" aria-label="Contact">
+            <i data-lucide="mail" class="vnav-icon"></i>
+            <span class="vnav-tooltip">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Sidebar Footer Actions -->
+    <div class="vnav-footer">
+      <button id="theme-toggle" class="theme-toggle-btn" type="button"
+        aria-label="Toggle Theme" title="Toggle Theme">
+        <i data-lucide="moon" class="theme-icon moon-icon"></i>
+        <i data-lucide="sun" class="theme-icon sun-icon"></i>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Mobile Top Bar Header -->
+  <header class="mobile-top-header" id="mobile-header">
+    <a href="#hero" class="mobile-brand-logo">
+      <span class="logo-bracket">&lt;</span>
+      <span class="logo-name">Monika V S</span>
+      <span class="logo-bracket">/&gt;</span>
+    </a>
+    <button id="theme-toggle-mobile" class="theme-toggle-btn" type="button" aria-label="Toggle Theme">
+      <i data-lucide="moon" class="theme-icon moon-icon"></i>
+      <i data-lucide="sun" class="theme-icon sun-icon"></i>
+    </button>
+  </header>
+
+  <!-- ======================================================== -->
+  <!-- MAIN CONTENT AREA                                        -->
+  <!-- ======================================================== -->
+  <main id="main-content">
+
+    <!-- ====================================================== -->
+    <!-- 1. HERO SECTION (Modern & Sleek)                       -->
+    <!-- ====================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+
+        <!-- Hero Text & Intro -->
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-pulse-dot"></span>
+            <span>Available for SDE-1 & Full-Time SWE Roles</span>
+          </div>
+
+          <div class="hero-titles-wrapper">
+            <span class="hero-greeting">Welcome to my portfolio</span>
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text">Monika V S</span>
+            </h1>
+            <h2 class="hero-subtitle">Fresh Graduate Software Engineer</h2>
+          </div>
+
+          <p class="hero-tagline">
+            B.Tech in Information Science graduate specializing in building scalable web applications, clean RESTful APIs, and solving data structures & algorithmic problems. Ready to build high-impact products.
+          </p>
+
+          <!-- Hero Metrics -->
+          <div class="hero-stats-row">
+            <div class="hero-stat-card">
+              <span class="stat-main-num">8.8+</span>
+              <span class="stat-sub-text">B.Tech CGPA</span>
+            </div>
+            <div class="hero-stat-card">
+              <span class="stat-main-num">300+</span>
+              <span class="stat-sub-text">DSA Solved</span>
+            </div>
+            <div class="hero-stat-card">
+              <span class="stat-main-num">5+</span>
+              <span class="stat-sub-text">Full-Stack Apps</span>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i data-lucide="arrow-up-right"></i>
+              <span>View Projects</span>
+            </a>
+            <a href="Resume_Template.pdf" target="_blank" class="btn btn-glass" download>
+              <i data-lucide="file-text"></i>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials">
+            <span class="socials-label">Connect:</span>
+            <div class="social-icon-group">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+                aria-label="GitHub">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+                aria-label="LinkedIn">
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+                aria-label="LeetCode">
+                <i data-lucide="code-2"></i>
+              </a>
+              <a href="mailto:monika@example.com" class="social-btn" aria-label="Email">
+                <i data-lucide="mail"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Modern Glass Code Editor & Avatar -->
+        <div class="hero-visual">
+          <div class="glass-card code-window-card">
+            <div class="window-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="window-title">engineer.config.ts</span>
+              <span class="window-status-pill">Active</span>
+            </div>
+
+            <!-- Profile Summary Inside Editor Header -->
+            <div class="window-profile-banner">
+              <div class="window-avatar-wrap">
+                <img src="WhatsApp Image 2026-10-07 at 10.07.51 AM.jpeg" alt="Monika V S" class="window-avatar-img">
+              </div>
+              <div class="window-profile-meta">
+                <h4 class="window-profile-name">Monika V S</h4>
+                <p class="window-profile-role">Information Science Engineer • 2026</p>
+              </div>
+            </div>
+
+            <!-- Code Body -->
+            <pre class="code-body"><code><span class="code-kw">const</span> <span class="code-def">candidate</span>: <span class="code-type">SoftwareEngineer</span> = {
+  <span class="code-prop">name</span>: <span class="code-str">"Monika V S"</span>,
+  <span class="code-prop">degree</span>: <span class="code-str">"B.Tech in Information Science"</span>,
+  <span class="code-prop">college</span>: <span class="code-str">"AIT, Chikkamagaluru"</span>,
+  <span class="code-prop">skills</span>: [<span class="code-str">"Java"</span>, <span class="code-str">"TypeScript"</span>, <span class="code-str">"React"</span>, <span class="code-str">"Node.js"</span>, <span class="code-str">"SQL"</span>],
+  <span class="code-prop">seeking</span>: <span class="code-str">"Full-Time SDE-1 / SWE Roles"</span>,
+  <span class="code-func">readyToJoin</span>: () =&gt; <span class="code-bool">true</span>
+};</code></pre>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- 2. ABOUT SECTION (Clean & Modern)                      -->
+    <!-- ====================================================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get to know me</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Photo & Video Card -->
+          <div class="about-media-col">
+            <div class="glass-card about-photo-card">
+              <div class="photo-frame">
+                <img src="WhatsApp Image 2026-10-07 at 10.07.51 AM.jpeg" alt="Monika V S" class="about-main-img">
+              </div>
+              <div class="about-photo-meta">
+                <h3 class="photo-author-name">Monika V S</h3>
+                <p class="photo-author-role">Information Science Engineer</p>
+                <div class="photo-location-tag">
+                  <i data-lucide="map-pin"></i>
+                  <span>Bengaluru, India • Open to Relocate / Remote</span>
+                </div>
+              </div>
+
+              <!-- Video Pitch Player -->
+              <div class="about-video-container">
+                <div class="video-label">
+                  <i data-lucide="play-circle"></i>
+                  <span>1-Minute Video Introduction</span>
+                </div>
+                <div class="video-frame">
+                  <video controls preload="metadata" class="about-main-video"
+                    poster="WhatsApp Image 2026-10-07 at 10.07.51 AM.jpeg">
+                    <source src="WhatsApp Video 2026-10-07 at 10.15.47 AM.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Bio, Highlights & Interests -->
+          <div class="about-content-col">
+            <!-- Bio Card -->
+            <div class="glass-card about-bio-card">
+              <h3 class="bio-heading">Fresh Perspective, Strong Computer Science Foundations</h3>
+              <p class="bio-text">
+                I am a recent Information Science & Engineering graduate with a relentless passion for software engineering, web architectures, and algorithmic problem-solving.
+              </p>
+              <p class="bio-text">
+                Throughout my academic journey, I built full-stack applications, participated in hackathons, and developed deep expertise in Object-Oriented Programming, Data Structures & Algorithms, and Database Management. I thrive in collaborative agile teams where I can write clean, modular code and contribute to real-world software products.
+              </p>
+
+              <!-- Highlights Metrics -->
+              <div class="about-metrics-grid">
+                <div class="metric-card">
+                  <div class="metric-value">8.8+</div>
+                  <div class="metric-label">CGPA in Major</div>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-value">300+</div>
+                  <div class="metric-label">DSA Challenges</div>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-value">5+</div>
+                  <div class="metric-label">End-to-End Apps</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Career Highlights -->
+            <div class="glass-card about-card-highlights">
+              <h4 class="card-inner-title">Key Highlights</h4>
+              <ul class="highlights-list">
+                <li>
+                  <i data-lucide="check-circle" class="hl-check"></i>
+                  <div><strong>Software Engineering Intern:</strong> Engineered RESTful backend endpoints and reusable React components at Tech Innovators Corp.</div>
+                </li>
+                <li>
+                  <i data-lucide="check-circle" class="hl-check"></i>
+                  <div><strong>Algorithmic Problem Solving:</strong> 300+ problems solved across LeetCode and 5-Star Problem Solving on HackerRank.</div>
+                </li>
+                <li>
+                  <i data-lucide="check-circle" class="hl-check"></i>
+                  <div><strong>Academic Excellence:</strong> Graduated with Distinction in Information Science & Engineering from AIT (2022-2026).</div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Interests & Hobbies -->
+            <div class="glass-card about-interests-card">
+              <h4 class="card-inner-title">Personal Interests</h4>
+              <div class="interests-grid">
+                <span class="interest-badge"><i data-lucide="gamepad-2"></i> Gaming & Tech Gadgets</span>
+                <span class="interest-badge"><i data-lucide="coffee"></i> Specialty Coffee & Tech Blogs</span>
+                <span class="interest-badge"><i data-lucide="git-branch"></i> Open Source Contributions</span>
+                <span class="interest-badge"><i data-lucide="cpu"></i> System Design & Clean Architecture</span>
+                <span class="interest-badge"><i data-lucide="puzzle"></i> Chess & Logic Puzzles</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- 3. SKILLS & TECHNICAL COMPETENCIES SECTION             -->
+    <!-- ====================================================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Technical Competencies</span>
+          <h2 class="section-title">Skills & Expertise</h2>
+          <p class="section-lead">A comprehensive overview of my programming languages, frameworks, developer tools, and computer science foundations.</p>
+        </div>
+
+        <div class="skills-grid-main">
+          
+          <!-- Skill Category 1: Core Programming Languages & Algorithms -->
+          <!-- Represents foundational coding capability and algorithmic problem-solving mastery -->
+          <div class="glass-card skill-card-detailed">
+            <div class="skill-card-top">
+              <div class="skill-icon-box"><i data-lucide="code"></i></div>
+              <div>
+                <h3 class="skill-cat-title">Programming Languages</h3>
+                <span class="skill-cat-subtitle">Core Syntax & OOP</span>
+              </div>
+            </div>
+
+            <div class="skill-bars-list">
+              <!-- Java & OOP Skill Meter -->
+              <div class="skill-progress-item">
+                <div class="skill-info-row">
+                  <span class="skill-name"><i data-lucide="coffee" class="mini-skill-icon"></i> Java (Core & OOP)</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Java proficiency 90%">
+                  <div class="progress-bar-fill fill-java" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <!-- JavaScript / TypeScript Skill Meter -->
+              <div class="skill-progress-item">
+                <div class="skill-info-row">
+                  <span class="skill-name"><i data-lucide="file-code" class="mini-skill-icon"></i> JavaScript / TypeScript</span>
+                  <span class="skill-percentage">88%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript & TypeScript proficiency 88%">
+                  <div class="progress-bar-fill fill-js" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <!-- Python Skill Meter -->
+              <div class="skill-progress-item">
+                <div class="skill-info-row">
+                  <span class="skill-name"><i data-lucide="terminal" class="mini-skill-icon"></i> Python</span>
+                  <span class="skill-percentage">82%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency 82%">
+                  <div class="progress-bar-fill fill-py" style="width: 82%;"></div>
+                </div>
+              </div>
+
+              <!-- SQL Database Queries -->
+              <div class="skill-progress-item">
+                <div class="skill-info-row">
+                  <span class="skill-name"><i data-lucide="database" class="mini-skill-icon"></i> SQL (PostgreSQL & MySQL)</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="SQL proficiency 85%">
+                  <div class="progress-bar-fill fill-sql" style="width: 85%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional Language Tags -->
+            <div class="skill-subtags">
+              <span class="subtag">C / C++</span>
+              <span class="subtag">ES6+ Standards</span>
+              <span class="subtag">Async / Await</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 2: Frontend Engineering & UI Systems -->
+          <!-- Represents web user interface craftsmanship, state management, and modern component architecture -->
+          <div class="glass-card skill-card-detailed">
+            <div class="skill-card-top">
+              <div class="skill-icon-box"><i data-lucide="layout"></i></div>
+              <div>
+                <h3 class="skill-cat-title">Frontend Engineering</h3>
+                <span class="skill-cat-subtitle">Web Apps & Interfaces</span>
+              </div>
+            </div>
+
+            <div class="skill-bars-list">
+              <!-- React.js & Next.js -->
+              <div class="skill-progress-item">
+                <div class="skill-info-row">
+                  <span class="skill-name"><i data-lucide="atom" class="mini-skill-icon"></i> React.js / Next.js</span>
+                  <span class="skill-percentage">86%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" aria-label="React.js proficiency 86%">
+                  <div class="progress-bar-fill fill-react" style="width: 86%;"></div>
+                </div>
+              </div>
+
+              <!-- HTML5 & Modern CSS3 -->
+              <div class="skill-progress-item">
+                <div class="skill-info-row">
+                  <span class="skill-name"><i data-lucide="palette" class="mini-skill-icon"></i> HTML5 / Modern CSS3</span>
+                  <span class="skill-percentage">94%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 & CSS3 proficiency 94%">
+                  <div class="progress-bar-fill fill-css" style="width: 94%;"></div>
+                </div>
+              </div>
+
+              <!-- Tailwind CSS & Responsive Systems -->
+              <div class="skill-progress-item">
+                <div class="skill-info-row">
+                  <span class="skill-name"><i data-lucide="smartphone" class="mini-skill-icon"></i> Tailwind CSS & Mobile First</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Tailwind CSS proficiency 90%">
+                  <div class="progress-bar-fill fill-tailwind" style="width: 90%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-subtags">
+              <span class="subtag">Hooks & Context</span>
+              <span class="subtag">Glassmorphism</span>
+              <span class="subtag">Web Accessibility (a11y)</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 3: Backend, Microservices & Databases -->
+          <!-- Represents server architecture, RESTful API design, ORM integration, and database modeling -->
+          <div class="glass-card skill-card-detailed">
+            <div class="skill-card-top">
+              <div class="skill-icon-box"><i data-lucide="server"></i></div>
+              <div>
+                <h3 class="skill-cat-title">Backend & Databases</h3>
+                <span class="skill-cat-subtitle">APIs & Microservices</span>
+              </div>
+            </div>
+
+            <div class="skill-bars-list">
+              <!-- Node.js & Express API -->
+              <div class="skill-progress-item">
+                <div class="skill-info-row">
+                  <span class="skill-name"><i data-lucide="cpu" class="mini-skill-icon"></i> Node.js & Express REST APIs</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Node.js & Express API proficiency 85%">
+                  <div class="progress-bar-fill fill-node" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <!-- Database Management (PostgreSQL & MongoDB) -->
+              <div class="skill-progress-item">
+                <div class="skill-info-row">
+                  <span class="skill-name"><i data-lucide="hard-drive" class="mini-skill-icon"></i> PostgreSQL & MongoDB</span>
+                  <span class="skill-percentage">84%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100" aria-label="Databases proficiency 84%">
+                  <div class="progress-bar-fill fill-db" style="width: 84%;"></div>
+                </div>
+              </div>
+
+              <!-- Authentication & Security -->
+              <div class="skill-progress-item">
+                <div class="skill-info-row">
+                  <span class="skill-name"><i data-lucide="shield-check" class="mini-skill-icon"></i> JWT Auth & API Security</span>
+                  <span class="skill-percentage">82%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Security proficiency 82%">
+                  <div class="progress-bar-fill fill-sec" style="width: 82%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-subtags">
+              <span class="subtag">Prisma ORM</span>
+              <span class="subtag">Socket.io</span>
+              <span class="subtag">CRUD Architecture</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 4: Developer Tools, Git & CS Fundamentals -->
+          <!-- Represents version control, containerization basics, algorithmic rigor, and team engineering workflow -->
+          <div class="glass-card skill-card-detailed">
+            <div class="skill-card-top">
+              <div class="skill-icon-box"><i data-lucide="wrench"></i></div>
+              <div>
+                <h3 class="skill-cat-title">Tools & CS Foundations</h3>
+                <span class="skill-cat-subtitle">Dev Workflow & Theory</span>
+              </div>
+            </div>
+
+            <div class="skill-bars-list">
+              <!-- Data Structures & Algorithms -->
+              <div class="skill-progress-item">
+                <div class="skill-info-row">
+                  <span class="skill-name"><i data-lucide="binary" class="mini-skill-icon"></i> Data Structures & Algorithms</span>
+                  <span class="skill-percentage">92%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="DSA proficiency 92%">
+                  <div class="progress-bar-fill fill-dsa" style="width: 92%;"></div>
+                </div>
+              </div>
+
+              <!-- Git & GitHub Version Control -->
+              <div class="skill-progress-item">
+                <div class="skill-info-row">
+                  <span class="skill-name"><i data-lucide="git-branch" class="mini-skill-icon"></i> Git & GitHub Workflow</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Git proficiency 90%">
+                  <div class="progress-bar-fill fill-git" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <!-- Postman & Docker Basics -->
+              <div class="skill-progress-item">
+                <div class="skill-info-row">
+                  <span class="skill-name"><i data-lucide="box" class="mini-skill-icon"></i> Postman & Docker (Basics)</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Tools proficiency 80%">
+                  <div class="progress-bar-fill fill-tools" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-subtags">
+              <span class="subtag">OOP Design</span>
+              <span class="subtag">OS & Networks</span>
+              <span class="subtag">Linux CLI</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- 4. TIMELINE SECTION (Education & Experience)           -->
+    <!-- ====================================================== -->
+    <section class="section timeline-section" id="timeline">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Academic & Career Journey</span>
+          <h2 class="section-title">Education & Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1: Internship -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-tag">Internship</div>
+              <h3 class="timeline-role">Software Engineering Intern</h3>
+              <h4 class="timeline-company">Tech Innovators Corp • Summer 2025</h4>
+              <p class="timeline-desc">
+                Collaborated with the core engineering team to build reusable React components, optimize backend API response times by 25%, and write unit tests for microservices.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Engineered RESTful endpoints handling 10,000+ daily mock requests.</li>
+                <li>Participated in weekly sprint planning, code reviews, and standups.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 2: College Degree -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-tag">Education</div>
+              <h3 class="timeline-role">Bachelor of Technology in Information Science</h3>
+              <h4 class="timeline-company">Adichunchanagiri Institute of Technology • 2022 - 2026</h4>
+              <p class="timeline-desc">
+                Graduated with Distinction (CGPA: 8.8/10.0). Relevant coursework includes Data Structures & Algorithms, Database Management Systems, Operating Systems, Computer Networks, and Cloud Computing.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Head Coordinator, Student Coding Club & Hackathon Lead.</li>
+                <li>Finalist in Inter-College National Hackathon 2024.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 3: Certifications -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-tag">Certification & Badges</div>
+              <h3 class="timeline-role">Meta Front-End & Problem Solving</h3>
+              <h4 class="timeline-company">Meta & HackerRank Certified • 2024</h4>
+              <p class="timeline-desc">
+                Completed the Meta Front-End Developer Professional Specialization and achieved 5-star Gold badge in Problem Solving on HackerRank.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- 5. PROJECTS SECTION                                    -->
+    <!-- ====================================================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">What I've Built</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card glass-card">
+            <div class="project-card-top">
+              <div class="project-folder-icon">
+                <i data-lucide="folder-git-2"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                  <i data-lucide="github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">DevPulse - Developer Collaboration Hub</h3>
+            <p class="project-desc">
+              A full-stack collaboration platform with real-time code sharing, project task boards, and OAuth authentication for developer teams.
+            </p>
+
+            <div class="project-tech-pills">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Socket.io</span>
+              <span>MongoDB</span>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card glass-card">
+            <div class="project-card-top">
+              <div class="project-folder-icon">
+                <i data-lucide="folder-git-2"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                  <i data-lucide="github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">AlgoVisualizer - Sorting & Pathfinding</h3>
+            <p class="project-desc">
+              Interactive web tool visualizing Dijkstra, A*, QuickSort, and MergeSort algorithms with step-by-step speed control and analytics.
+            </p>
+
+            <div class="project-tech-pills">
+              <span>JavaScript</span>
+              <span>HTML5 Canvas</span>
+              <span>CSS3</span>
+              <span>DSA</span>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card glass-card">
+            <div class="project-card-top">
+              <div class="project-folder-icon">
+                <i data-lucide="folder-git-2"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                  <i data-lucide="github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">TaskFlow - Smart Productivity API</h3>
+            <p class="project-desc">
+              Secure REST API with JWT authentication, rate limiting, automated email alerts, and comprehensive Swagger documentation.
+            </p>
+
+            <div class="project-tech-pills">
+              <span>Express.js</span>
+              <span>PostgreSQL</span>
+              <span>Prisma</span>
+              <span>Docker</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- 6. TESTIMONIALS SECTION                                -->
+    <!-- ====================================================== -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Feedback & Endorsements</span>
+          <h2 class="section-title">Testimonials</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card glass-card">
+            <div class="testi-header">
+              <div class="testi-avatar-box">👨‍🏫</div>
+              <div class="testi-info">
+                <h4 class="testi-name">Dr. K. Sharma</h4>
+                <p class="testi-role">Professor & HOD, ISE Dept</p>
+              </div>
+              <div class="stars-row">★★★★★</div>
+            </div>
+            <p class="testi-quote">
+              "Monika has demonstrated exceptional problem-solving and algorithmic thinking throughout her college major. Her dedication during hackathons and student workshops was exemplary."
+            </p>
+            <div class="testi-badge">Academic Mentor</div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card glass-card">
+            <div class="testi-header">
+              <div class="testi-avatar-box">👨‍💻</div>
+              <div class="testi-info">
+                <h4 class="testi-name">Rahul Verma</h4>
+                <p class="testi-role">Lead SDE, Internship Mentor</p>
+              </div>
+              <div class="stars-row">★★★★★</div>
+            </div>
+            <p class="testi-quote">
+              "Quick to grasp modern tech stacks and produce clean, maintainable code. Monika contributed directly to our microservices optimization with great autonomy and enthusiasm."
+            </p>
+            <div class="testi-badge">Project Lead</div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card glass-card">
+            <div class="testi-header">
+              <div class="testi-avatar-box">👩‍💻</div>
+              <div class="testi-info">
+                <h4 class="testi-name">Priya Nair</h4>
+                <p class="testi-role">Hackathon Teammate</p>
+              </div>
+              <div class="stars-row">★★★★★</div>
+            </div>
+            <p class="testi-quote">
+              "Teaming up with Monika was incredible. She handled the frontend state management and API connections under tight 24-hour hackathon deadlines with zero bugs!"
+            </p>
+            <div class="testi-badge">Peer Review</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- 7. INTERACTIVE CHAT SECTION (Recruiter Assistant)      -->
+    <!-- ====================================================== -->
+    <section class="section chat-section" id="chat">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Instant Assistant</span>
+          <h2 class="section-title">Chat with Monika's DevBot</h2>
+        </div>
+
+        <div class="chat-container glass-card">
+          <div class="chat-window-header">
+            <div class="chat-bot-info">
+              <div class="chat-bot-avatar">🤖</div>
+              <div>
+                <h4 class="chat-bot-name">Monika Assistant</h4>
+                <span class="chat-online-badge"><span class="pulse-dot"></span> Online</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-messages" id="chat-messages" role="log" aria-live="polite">
+            <div class="chat-bubble bot-bubble">
+              <div class="bubble-sender">🤖 Monika Assistant</div>
+              <p>Hello! I am Monika's portfolio assistant. What would you like to know about her technical skills, projects, or full-time availability?</p>
+            </div>
+          </div>
+
+          <!-- Quick Interactive Prompt Buttons -->
+          <div class="chat-quick-prompts" aria-label="Suggested questions">
+            <button type="button" class="quick-prompt-btn" data-query="What is Monika's tech stack?">
+              💻 Tech Stack?
+            </button>
+            <button type="button" class="quick-prompt-btn" data-query="Are you open for immediate joining?">
+              🚀 Availability?
+            </button>
+            <button type="button" class="quick-prompt-btn" data-query="What are your academic credentials?">
+              🎓 Education & CGPA?
+            </button>
+            <button type="button" class="quick-prompt-btn" data-query="How can I schedule an interview?">
+              📅 Interview Monika
+            </button>
+          </div>
+
+          <!-- Chat Input Form -->
+          <form id="chat-form" class="chat-input-form">
+            <input type="text" id="chat-input" class="chat-input" placeholder="Ask a question or click a prompt above..." autocomplete="off" aria-label="Type message">
+            <button type="submit" class="btn btn-primary chat-send-btn" aria-label="Send message">
+              <i data-lucide="send"></i>
+              <span>Send</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- 8. CONTACT SECTION                                     -->
+    <!-- ====================================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card glass-card">
+          <div class="section-header">
+            <span class="section-subtitle">Let's connect</span>
+            <h2 class="section-title">Ready to build something great?</h2>
+            <p class="contact-subtitle">
+              I am actively seeking full-time Software Engineer positions and internship opportunities. Whether you have
+              a job opening or just want to say hi, feel free to reach out!
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a href="mailto:monika@example.com" class="btn btn-primary btn-lg">
+              <i data-lucide="mail"></i>
+              <span>Say Hello</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-lg">
+              <i data-lucide="linkedin"></i>
+              <span>Connect on LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================== -->
+  <!-- FOOTER                                                   -->
+  <!-- ======================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p>© 2026 Monika V S. Crafted with modern HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top" aria-label="Back to top">
+          <span>Back to top</span>
+          <i data-lucide="chevron-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+
+</html>
